@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: face-emotion-predictor
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: TF_ENABLE_ONEDNN_OPTS
+        value: "0"
+    autoDeploy: true

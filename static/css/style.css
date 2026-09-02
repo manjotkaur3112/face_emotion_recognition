@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+  min-height: 100vh;
+  color: white;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.display-4 {
+  font-weight: 700;
+}
+
+.lead {
+  color: #d1d5db;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  color: white;
+  transition: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.35);
+}
+
+.feature-card .card-body {
+  padding: 45px;
+}
+
+.feature-card h1 {
+  font-size: 70px;
+}
+
+.feature-card h3 {
+  margin-top: 15px;
+}
+
+.feature-card p {
+  color: #d1d5db;
+  margin: 20px 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.result-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 32px;
+}
+
+.result-card .card {
+  width: 100%;
+  max-width: 200px;
+}
+
+form#uploadForm {
+  width: min(324px, 100%);
+  margin: 0 auto;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: mediumseagreen;
+}
+
+.card h5 {
+  font-size: 1rem;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background: #2563eb;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background: #16a34a;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #15803d;
+  transform: scale(1.05);
+}
+
+.btn-dark {
+  background: #111827;
+  border: none;
+}
+
+.btn-dark:hover {
+  background: black;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+  background: #f8fafc;
+}
+
+img {
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+video,
+img {
+  border: 4px solid #2563eb;
+
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 36px;
+  }
+  .feature-card {
+    margin-bottom: 25px;
+  }
+  .feature-card h1 {
+    font-size: 50px;
+  }
+}
+
+.camera-container {
+  position: relative;
+  width: 800px;
+  max-width: 95%;
+  margin: 30px auto;
+}
+
+#video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  background: #000;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#canvas {
+  display: none;
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 18px;
+}
